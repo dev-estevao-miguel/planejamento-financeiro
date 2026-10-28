@@ -3,6 +3,10 @@
 Plataforma web (PWA) de planejamento financeiro pessoal e familiar: planejado × realizado, recorrências, metas e relatórios, com isolamento total entre famílias.
 
 <p>
+  <a href="https://financeiro.tscbr.com.br"><img alt="Acessar Planejamento Financeiro" src="https://img.shields.io/badge/VER%20PROJETO-financeiro.tscbr.com.br-2ea44f?style=for-the-badge&logo=googlechrome&logoColor=white"/></a>
+</p>
+
+<p>
   <img alt="Status" src="https://img.shields.io/badge/status-em%20desenvolvimento-10bfe1?style=flat-square"/>
   <img alt="Next.js" src="https://img.shields.io/badge/Next.js-16-1f2334?style=flat-square&logo=nextdotjs&logoColor=white"/>
   <img alt="React" src="https://img.shields.io/badge/React-19-1f2334?style=flat-square&logo=react&logoColor=61DAFB"/>
@@ -163,6 +167,8 @@ Os testes usam apenas pessoas fictícias.
 
 ### Build e deploy (Vercel)
 
+O endereço público oficial da demonstração é **https://financeiro.tscbr.com.br**.
+
 ```bash
 npm run build
 ```
@@ -206,4 +212,4 @@ Código-fonte disponível para consulta e estudo. **Todos os direitos reservados
 
 ---
 
-Desenvolvido por **Estevão Santos** · [github.com/dev-estevao-miguel](https://github.com/dev-estevao-miguel)
+Desenvolvido por **Estevão dos Santos** · [github.com/dev-estevao-miguel](https://github.com/dev-estevao-miguel)
