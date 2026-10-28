@@ -1,0 +1,7 @@
+-- Intentionally empty.
+--
+-- Accounts must be created through Supabase Auth (admin API) so passwords and
+-- identities are handled by Auth itself, and real household data must never
+-- live in a versioned file. Households are bootstrapped by a server-side
+-- script from supabase/seed/private/<household>.json (see README, Phase 2).
+-- Database tests use fictitious fixtures in supabase/tests/support/.

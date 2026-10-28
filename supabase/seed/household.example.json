@@ -1,0 +1,53 @@
+{
+  "$comment": "Exemplo FICTÍCIO do formato de importação de uma família. Copie para supabase/seed/private/<familia>.json (ignorado pelo git) e preencha com dados reais. Valores monetários são strings decimais ('1234.56') para não perder precisão. Itens com 'skip': true não são importados; 'review' documenta pendências.",
+  "household": {
+    "name": "Família Exemplo",
+    "currencyCode": "BRL",
+    "locale": "pt-BR",
+    "timeZone": "America/Recife",
+    "emergencyReserveMonths": 6
+  },
+  "members": [
+    {
+      "key": "pessoa_a",
+      "username": "pessoa.a",
+      "fullName": "Pessoa A de Exemplo",
+      "displayName": "Pessoa A",
+      "relationship": "Cônjuge",
+      "role": "owner",
+      "phoneE164": "+5500000000001"
+    },
+    {
+      "key": "pessoa_b",
+      "username": "pessoa.b",
+      "fullName": "Pessoa B de Exemplo",
+      "displayName": "Pessoa B",
+      "relationship": "Cônjuge",
+      "role": "admin",
+      "phoneE164": "+5500000000002"
+    }
+  ],
+  "paymentMethods": [
+    { "key": "cartao_principal", "name": "Cartão principal", "type": "credit_card" }
+  ],
+  "subcategories": [
+    { "parent": "Moradia", "name": "Aluguel" }
+  ],
+  "recurringRules": [
+    {
+      "kind": "income", "description": "Salário", "amount": "3000.00",
+      "category": "Salário", "member": "pessoa_a", "startsOn": "2026-10-01"
+    },
+    {
+      "kind": "expense", "description": "Aluguel", "amount": "1200.00",
+      "category": "Moradia", "subcategory": "Aluguel", "startsOn": "2026-10-01"
+    }
+  ],
+  "plannedTransactions": [
+    {
+      "kind": "expense", "description": "Fatura do cartão", "amount": "450.00",
+      "category": "Cartão de crédito", "paymentMethod": "cartao_principal", "competenceMonth": "2026-10-01"
+    }
+  ],
+  "notImported": []
+}
